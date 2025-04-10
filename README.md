@@ -1,7 +1,1 @@
-echo "# CheckUser-Rotate" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/rogellevi/CheckUser-Rotate.git
-git push -u origin main
+nohup python3 c4gcheck.py > /dev/null 2>&1 &
