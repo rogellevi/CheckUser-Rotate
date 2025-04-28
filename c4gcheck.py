@@ -6,7 +6,7 @@ class ProxyHandler(http.server.BaseHTTPRequestHandler):
         try:
           
             target_host = 'us1.chadvps.xyz'
-            target_port = 5555 #
+            target_port = 5454 #
             url = 'http://' + target_host + ':' + str(target_port) + self.path
 
           
@@ -38,7 +38,7 @@ class ProxyHandler(http.server.BaseHTTPRequestHandler):
 if __name__ == '__main__':
     # Endereço e porta do servidor proxy
     proxy_host = '0.0.0.0' #AQUI NÂO MECHE
-    proxy_port = 5757  #NOVA PORTA
+    proxy_port = 5454  #NOVA PORTA
 
     # Inicia o servidor proxy
     proxy_server = http.server.HTTPServer((proxy_host, proxy_port), ProxyHandler)
